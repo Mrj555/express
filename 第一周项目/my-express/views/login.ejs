@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+    <script src="/js/login.js"></script>
+    <script src="/js/jquery.min.js"></script>
+  </head>
+  <body>
+    <form class="login-body">
+    	<div class="login-hd">
+    		<img src="images/shopex.png" alt="shopex" class="logo">
+    	</div>
+    	<div class="center-wrap">
+    		<div class="login-center">
+    			<img src="images/ecshop-logo.png" width="248" height="65">
+    		</div>
+    		<div class="z-bd">
+    			<div class="login-panel">
+    			
+    				<div class="controls first">
+    					<img class="iphone" src="/images/iphone.png" alt="" width="20px" height="20px"viewBox="0 0 20 20"/>
+    					<input type="text" id="username" placeholder="用户名"/>
+    				</div>
+    				<div class="controls two">
+    					<img class="iphone" src="/images/mima.png" alt="" width="20px" height="20px"viewBox="0 0 20 20"/>
+    					<input type="password" id="psw" placeholder="密码"/>
+    				</div>
+    				<div class="controls third">
+    					<img class="iphone" src="/images/yzm.png" alt="" width="20px" height="20px"viewBox="0 0 20 20"/>
+    					<input type="text" id="capthcha" class = "capital" placeholder="验证码"/>
+    					
+    					<div style="position: absolute;right: 8px; top: 8px;">
+    						<span class="YZM" onclick="GetYzm()">
+    							<img id="YZM-TU" src="http://www.doudoufei.top/shops/admin/index.php?act=captcha&"+ Math.random()>
+    						</span>
+    				</div>
+    				<div class="controls last">
+    					<input type="submit" class="btn-a" onclick="login()" value="登录" >
+    				</div>
+    				<div class="controls bside" style="border: none;">
+    					<input type="checkbox" name="remember" id="remember" value="1" />
+    					<label for="remember" style="font-size: 12px;">保存登录信息</label>
+    					<a href="#" class="link-forget cl-link-blue">忘记密码?</a>
+    					<a href="#" class="link-home cl-link-blue">去店铺首页></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </form>
+  </body>
+</html>
